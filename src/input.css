@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+@plugin "daisyui" {
+  themes: all;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply flex flex-col h-full;
+}
+
+main {
+  @apply grow;
+}
+@layer components {
+  .align-elements {
+    @apply max-w-6xl px-4 mx-auto;
+  }
+  .btn {
+    @apply border rounded-2xl px-2 py-1 cursor-pointer;
+  }
+  .span {
+    @apply block mb-1 mt-2;
+  }
+}
