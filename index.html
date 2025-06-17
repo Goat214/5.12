@@ -79,11 +79,13 @@
           />
           <div class="flex mb-4">
             <h2 class="text-3xl font-bold mb-2.5 mr-auto">Mahsulotlar:</h2>
-            <select id="price-sort" class="select w-[200px]">
-              <option disabled selected>Narh bo'yicha saralash</option>
-              <option data-price="hight">Eng qimmati ⬆</option>
-              <option data-price="low">Eng Arzoni ⬇</option>
+            <select id="price-sort">
+              <option value="default">Saralash</option>
+              <option data-price="low">Arzondan qimmatroqqa</option>
+              <option data-price="high">Qimmatdan arzonga</option>
             </select>
+            
+            
             <input
               type="text"
               id="search"
